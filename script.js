@@ -71,11 +71,13 @@ const list = [
       return array;
     }
     
+    // first, randomize the array
+
     shuffle(list);
     // create the variable for the arrays in a group
     let perChunk = 2  
     
-    // as per the group, assign two indexes to a single array
+    // as per the group, assign two indexes to a single arra
     let result = list.reduce((resultArray, item, index) => { 
       const chunkIndex = Math.floor(index/perChunk)
     
